@@ -1,0 +1,892 @@
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-image: url('Background-image-3.jpg');
+  height: 100vh;
+  width: 100%;
+}
+
+/* This is where the navigation menu starts here */
+
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba (0,0,0,0.1);
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: bolder;
+  font-size: 25px;
+  color: #333;
+}
+
+header .navbar ul {
+  list-style-type: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+header .navbar ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+header .navbar ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: white;
+  display: none;
+}
+
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+header .navbar ul li ul li ul {
+  left: 200 px;
+  top: 0;
+}
+
+header .navbar ul li:focus-within > ul{
+
+}
+
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+
+header #menu-bar {
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+/* This is where the navigation menu ends here */
+
+/* This is where the home page begins */
+main #Home-section {
+
+}
+main #Home-section {
+  margin-top: 300px;
+  text-align: center;
+}
+
+main #Home-section mark {
+  background-color: white;
+  padding: 20px 40px;
+}
+
+main #Home-section h1{
+  font-size: 50px;
+}
+
+main #Home-selection h5 {
+  font-size: 35px;
+}
+
+/* This is where the home page ends */
+
+/* This is where the about us section starts */
+main #About-section {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 500px;
+}
+
+
+main #About-section .about-wrapper img {
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+
+main #About-section .about-wrapper .about-text {
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+main #About-section .about-wrapper {
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main #About-section .about-wrapper .about-text h1  {
+  font-size: 65px;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main #About-section .about-wrapper .about-text span  {
+  color: #05ffff;
+}
+
+main #About-section .about-wrapper .about-text h5  {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+main #About-section .about-wrapper .about-text p  {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+main #About-section .about-text .btn button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+main #About-section .about-text .btn button:hover {
+  background-color:  #05ffff;
+  color: white;
+}
+/* This is where the about us section ends */
+
+/* This is where the contact section starts */
+
+#fancy-form{
+ background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6));
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+}
+
+/* container utility */
+#fancy-form .container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* main div */
+.form-sections{
+  margin-top: 5rem;
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Form-left styling */
+.Form-left h1{
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.Form-left h4{
+  padding: 0;
+  margin: 0;
+  color: rgb(243, 235, 235);
+}
+.line{
+  border-bottom: 2px solid rgb(12, 168, 207);
+  width: 8%;
+  margin-left: 0;
+}
+.Form-left span{
+  color: rgb(187, 182, 182);
+  font-weight: bold;
+}
+
+.Form-left hr{
+  width: 25rem;
+  margin-left: 0;
+  border: 1px solid rgb(53, 52, 52);
+}
+
+/* socail media icons */
+.fa {
+  padding: 8px;
+  font-size: 18px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 2px; */
+  color: rgb(187, 182, 182);
+}
+.fa:hover{
+  color: rgb(16, 135, 190);;
+}
+
+
+
+/* Form Right Styling */
+.Form-right h1{
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+form{
+  padding-top: 2rem;
+}
+
+form h5{
+  padding: 0;
+  margin: 0;
+  color: rgb(228, 218, 218);
+}
+form input{
+  padding:0.6rem;
+  width: 27rem;
+  border: none;
+  background-color:rgba(136, 133, 133, 0.3);
+  color:white;
+  border: none;
+  outline:none;
+}
+
+form textarea{
+  padding:0.6rem;
+  width: 27rem;
+  border: none;
+  background-color:rgba(136, 133, 133, 0.3);
+  color:white;
+  border: none;
+  outline:none;
+ }
+
+ form button {
+    width: 9rem;
+    background: rgb(12, 168, 207);
+    padding: 5px;
+    outline: none;
+    border-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 0.9rem;
+    border-radius: 50px;
+    cursor: pointer;
+ }
+
+/* This is where the contact section ends */
+
+/* The spa section starts here */
+main #Spa-section {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+main #Spa-section .spa-wrapper img {
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+
+main #Spa-section .spa-wrapper .spa-text {
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+main #Spa-section .spa-wrapper {
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main #Spa-section .spa-wrapper .spa-text h1  {
+  font-size: 65px;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main #Spa-section .spa-wrapper .spa-text span  {
+  color: #05ffff;
+}
+
+main #Spa-section .spa-wrapper .spa-text h5  {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+main #Spa-section .spa-wrapper .spa-text p  {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+main #Spa-section .spa-text .btn button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+main #Spa-section .spa-text .btn button:hover {
+  background-color:  #05ffff;
+  color: white;
+}
+/* The spa section ends here /*
+
+/* The Dining section starts here */
+main #Dining-section {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+main #Dining-section .dining-wrapper img {
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+
+main #Dining-section .dining-wrapper .dining-text {
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+main #Dining-section .dining-wrapper {
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main #Dining-section .dining-wrapper .dining-text h1  {
+  font-size: 65px;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main #Dining-section .dining-wrapper .dining-text span  {
+  color: #05ffff;
+}
+
+main #Dining-section .dining-wrapper .dining-text h5  {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+main #Dining-section .dining-wrapper .dining-text p  {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+main #Dining-section .dining-text .btn button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+main #Dining-section .dining-text .btn button:hover {
+  background-color:  #05ffff;
+  color: white;
+}
+/* The Dining section ends here */
+
+/* The Accomodation section starts here */
+main #Accomodation-section {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+main #Accomodation-section .accomodation-wrapper img {
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+
+main #Accomodation-section .accomodation-wrapper .accomodation-text {
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+main #Accomodation-section .accomodation-wrapper {
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main #Accomodation-section .accomodation-wrapper .accomodation-text h1  {
+  font-size: 65px;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main #Accomodation-section .accomodation-wrapper .accomodation-text span  {
+  color: #05ffff;
+}
+
+main #Accomodation-section .accomodation-wrapper .accomodation-text h5  {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+main #Accomodation-section .accomodation-wrapper .accomodation-text p  {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+main #Accomodation-section .accomodation-text .btn button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+main #Accomodation-section .accomodation-text .btn button:hover {
+  background-color:  #05ffff;
+  color: white;
+}
+/* The Accomodation section ends here */
+
+/*  The conference section starts here */
+main #Conference-section {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+main #Conference-section .conference-wrapper img {
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+
+main #Conference-section .conference-wrapper .conference-text {
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+main #Conference-section .conference-wrapper {
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main #Conference-section .conference-wrapper .conference-text h1  {
+  font-size: 65px;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main #Conference-section .conference-wrapper .conference-text span  {
+  color: #05ffff;
+}
+
+main #Conference-section .conference-wrapper .conference-text h5  {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+main #Conference-section .conference-wrapper .conference-text p  {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+main #Conference-section .conference-text .btn button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+main #Conference-section .conference-text .btn button:hover {
+  background-color:  #05ffff;
+  color: white;
+}
+/* The conference section ends here */
+
+
+/* The booking section starts here */
+main #Booking-section {
+  background-color: #a2d4d4;
+  margin-top:  0px;
+}
+
+main #Booking-section .contact-main {
+  background-size: cover;
+  padding: 40px 0px;
+}
+
+main #Booking-section  .contact-main h1 {
+  text-align: center;
+  color:white;
+}
+
+main #Booking-section .border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+main #Booking-section  .contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+main #Booking-section .contact-txt-form{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0px;
+  border: 0px;
+  background-color: white
+  color: black;
+  padding: 20px 40px;
+}
+
+main #Booking-section .contact-txt-form:hover{
+  box-sizing: 0 0 10px cyan;
+}
+
+main #Booking-section textarea .contact-txt-form{
+  resize: none;
+  height: 120px;
+}
+
+main #Booking-section .contact-txt-form:focus{
+  box-shadpow: 0 0 10px 4px #34495e;
+}
+
+main #Booking-section .btn-send{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0px;
+  border: 0px;
+  background-color: #F08080;
+  color: white;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+main #Booking-section .btn-send:hover{
+  background-color: black;
+
+}
+/* The booking section ends here */
+
+
+/* The footer section starts here */
+footer #social-media-footer .footer-container {
+    width: 100%;
+    background-color: white;
+    padding: 60px 0px;
+}
+
+footer #social-media-footer .footer-container ul li{
+	display: inline-block;
+    padding: 0px 100px;
+    margin: 10px;
+    color: black;
+	text-align: center;
+}
+/* The footer section ends here */
+
+
+/*  The mobile responsive starts here  */
+@media screen  and (max-width: 1250px) {
+  header {
+    padding: 20px;
+  }
+
+  header label {
+    display: initial;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    display: none;
+  }
+
+  header .navbar ul li {
+    width: 100%;
+  }
+
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+
+  header .navbar ul li ul li {
+    background-color: #eee;
+  }
+
+  header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+  }
+
+#menu-bar:checked ~ .navbar {
+  display: initial;
+}
+
+/*  The mobile responsive ends here  */
+
+
+
+/* The mobile  about responsive starts where */
+
+main   #About-section {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+}
+
+main #About-section .about-wrapper .about-text {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* The mobile about responsive ends here */
+
+
+/* The mobile contact form starts here */
+#fancy-form .form-sections{
+       display: block;
+       width: 100%;
+       text-align: left;
+          }
+
+      /* background image  */
+      #fancy-form{
+        background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)),url(../imgs/particles.jpg);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: 100%;
+         }
+
+      .form-sections .Form-right{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+         }
+
+    /* socail media icons */
+        .fa{
+         padding: 8px;
+         font-size: 18px;
+         width: 30px;
+         text-align: center;
+         text-decoration: none;
+         color: rgb(187, 182, 182);
+             }
+/* The mobile contact form ends here */
+
+/* The mobile spa section starts here */
+main   #Spa-section {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+}
+
+main #Spa-section .spa-wrapper .spa-text {
+  text-align: center;
+  margin-top: 40px;
+}
+/* The mobile spa section ends here */
+
+/* The mobile spa section starts here */
+main   #Spa-section {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+}
+
+main #Spa-section .spa-wrapper .spa-text {
+  text-align: center;
+  margin-top: 40px;
+}
+/* The mobile spa section ends here */
+
+/* The mobile dining section starts here */
+main   #Dining-section {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+}
+
+main #Dining-section .dining-wrapper .dining-text {
+  text-align: center;
+  margin-top: 40px;
+}
+/* The mobile dining section ends here */
+
+/* The mobile dining section starts here */
+main   #Accomodation-section {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+}
+
+main #Accomodation-section .accomodation-wrapper .accomodation-text {
+  text-align: center;
+  margin-top: 40px;
+}
+/* The mobile dining section ends here */
+
+/* The conference rooms start here */
+main   #Conference-section {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+}
+
+main #Conference-section .conference-wrapper .conference-text {
+  text-align: center;
+  margin-top: 40px;
+}
+/* The conference rooms ends here */
+
+/* The footer sections starts here */
+footer #social-media-footer .footer-container {
+  display: block;
+  cursor: pointer;
+}
+    /*  The footer sections ends here */
+
+
+
+
+/* The mobile  about responsive ends where */
+}
